@@ -6,7 +6,7 @@
 
 <h1>Basic counter example</h1>
 <button on:click={increment}> Increment </button>
-<button on:click={decrement}> Increment </button>
+<button on:click={decrement}> Decrement </button>
 <p>
     Counter value is {counter}
 </p>
