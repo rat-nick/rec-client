@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    $: counter = 0;
+    const increment = () => (counter += 1);
+    const decrement = () => (counter -= 1);
+</script>
+
+<h1>Basic counter example</h1>
+<button on:click={increment}> Increment </button>
+<button on:click={decrement}> Increment </button>
+<p>
+    Counter value is {counter}
+</p>
